@@ -1,0 +1,771 @@
+/**
+ * отключены поля, отступы и границы по умолчанию
+ */
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+Элемент, у которого установлено свойство отображения, blockначинается с новой строки и занимает доступную ширину экрана */
+main {
+  display: block;
+}
+
+/**
+ Рисует горизонтальную линию
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+} 
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne.ttf") format("TrueType");
+  font-style:italic;
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("TrueType");
+  font-style:normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GentiumBookBasic";
+  src: url("../fonts/GentiumBookBasic-Regular.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.page-header {
+  background-image: url(../img/Bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  height: 750px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+.page-header__wpapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+}
+
+.page-header__nav {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  align-items:baseline;
+  flex-direction:row;
+  display: flex;
+}
+
+.page-header__logo {
+  margin-bottom: 35px; 
+  margin-left: 175px;
+  margin-top: 45px; 
+  width: 175px;
+  color: #ffffff;
+
+}
+
+.nav-menu {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  align-items:center;
+}
+
+.nav-menu__items {
+  display: flex;
+  align-items: stretch;
+  font-family: "GentiumBookBasic";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.1px;
+  margin-left: 218px;
+}
+
+.nav-menu__toggle {
+  display: none;
+}
+
+
+.nav-menu__items--closed + .nav-menu__toggle:before {
+  content: "\2630";
+}
+
+.nav-menu__link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0 16px;
+  margin: auto 10px;
+}
+
+.nav-menu__link:hover:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 90%;
+  top: -48px;
+  left: 5%;
+  background-color: #c8c5bc;
+}
+
+.page-header__socials {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 217px;
+}
+
+.socials__item {
+  color: #dab33e;
+  font-size: 17px;
+  margin: 0 8px;
+}
+
+.socials__item:hover {
+  color: #ffffff;
+}
+
+/* .socials__item--white {
+  color: #ffffff;
+}
+.socials__item--white:hover {
+  color: #dab33e;
+} */
+
+.page-header__promo {
+  margin-top: 135px;
+  box-sizing: border-box;
+  margin-left: 315px;
+  margin-right: 315px;
+  width: 970px;
+  align-items: center;
+  align-self:center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__title {
+  width: 970px;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.page-header__divider {
+  padding-bottom: 26px;
+
+}
+
+.page-header__btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 115px;
+}
+
+.btn {
+  padding: 18px 50px;
+  margin: 0 15px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #000000;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #ffffff;
+}
+
+.about {
+  background-image: url(../img/about-bg.jpg);
+  background-repeat: no-repeat;
+  min-height: 710px;
+  background-position: center;
+  max-width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__wrapper {
+  box-sizing: border-box;
+  margin-left: 176px;
+  margin-right: 176px;
+  align-self: center;
+  align-items: center;
+  max-width: 1250px;
+  flex-direction: row;
+  display: flex;
+}
+
+.about__info {
+  max-width: 430px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.about__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #cc9900;
+}
+.about__title::before {
+  content: "";
+  position: absolute;
+  width: 247px;
+  height: 24px;
+  background: url("../img/divider-gold.png");
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+}
+
+.about__text {
+  width: 100%;
+  line-height: 1.5;
+}
+
+.about__cook {
+  margin-top: 32px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.about__dish {
+  align-self:auto;
+  margin-left: 50px;
+}
+
+.ingredients {
+  display: flex;
+  background-image: url(../img/bg3.png);
+  background-repeat: no-repeat;
+  height: 758px;
+  background-position: center;
+  width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+.ingredients__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ingredients__info {
+  flex-direction: column;
+  display: flex;
+  width: 570px;
+  margin-top: 100px;
+  margin-bottom: 84px;
+  margin-right: 0px;
+  margin-left: 600px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ingredients__title {
+  position: relative;
+  font-size: 36px;
+  font-family: "YesevaOne";
+  font-weight: bold;
+  margin-top: 75px;
+  margin-bottom: 16px;
+}
+
+.ingredients__text {
+  margin-bottom: 65px;
+  width: 430px;
+  align-self: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.ingredients__divider {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.ingredients__icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  width: 430px;
+  align-self: center;
+}
+
+.menu {
+  background-image: url(../img/menu-bg.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  height: 994px;
+  background-position: center;
+  width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__wrapper {
+  box-sizing: border-box;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1170px;
+  max-height: 794px;
+  align-self: center;
+  align-items: center;
+  display: flex;
+}
+
+.menu__column1 {
+  box-sizing: border-box;
+  margin-left: 70px;
+}
+.menu__column2 {
+  box-sizing: border-box;
+  margin-left: 170px;
+}
+
+.menu__category {
+  box-sizing: border-box;
+}
+
+.menu__title {
+  box-sizing: border-box;
+  position: relative;
+  /* margin-bottom: 55px; */
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "YesevaOne";
+  color: #cc9900;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.menu__title::after {
+  content: "";
+  position: absolute;
+  width: 247px;
+  height: 24px;
+  background: url("../img/Divider2.png");
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+}
+
+.dish {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+.dish--special {
+  position: relative;
+  border: 1px solid #cc9900;
+}
+.dish--special::before {
+  content: "Special";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  transform: translateY(-100%);
+  padding: 3px 12px;
+  background-color: #cc9900;
+  font-size: 14px;
+  color: #fff;
+}
+
+.dish__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: "YesevaOne";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  color: #cc9900;
+  border-bottom: 1px solid #cc9900;
+}
+
+.dish__title {
+  margin: 5px 0;
+}
+
+.dish__price {
+  align-self: center;
+  margin: 5px 0;
+}
+
+.dish__descr {
+  margin: 11px 0;
+}
+
+.review {
+  background-image: url(../img/bg4.png);
+  display: flex;
+  background-repeat: no-repeat;
+  height: 758px;
+  background-position: center;
+  width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.review__wrapper {
+  box-sizing: border-box;
+  margin-left: 415px;
+  margin-top: 100px;
+  margin-bottom: 101px;
+  margin-right: 415px;
+  max-width: 770px;
+  height: 557px;
+  display: flex;
+}
+
+.review__item {
+  padding: 75px 70px 0 0; 
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.review__title {
+  padding-left: 70px;
+  position: relative;
+  font-family: "YesevaOne";
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 42px;
+}
+.review__title::after {
+  content: "";
+  margin-left: 30px;
+  position:absolute;
+  width: 230px;
+  height: 24px;
+  background: url("../img/Divider1.png");
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+}
+.review__body {
+  display: flex;
+  flex-direction: row;
+}
+.review__dots {
+  margin-left: 30px;
+  width: 32px;
+  height: 27px;
+}
+.review__text {
+  width: 630px;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: "GentiumBookBasic";
+  font-weight: bold;
+  text-align:center;
+  font-size: 26px;
+  line-height: 1.8;
+}
+
+.review__author {
+  padding-left: 70px;
+  font-family: "Lato";
+  margin: 0px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.reservations {
+  background-image: url(../img/about-bg.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  height: 710px;
+  background-position: center;
+  width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservations__wrapper {
+  box-sizing: border-box;
+  margin-left: 175px;
+  margin-right: 175px;
+  margin-top: 100px;
+  margin-bottom: 103px;
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 110px;
+}
+
+.reservations__img {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 570px;
+  margin: 0 15px;
+}
+
+.reservations__info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+ 
+  padding: 0 0 0 85px ;
+  text-align: center;
+}
+
+.reservations__title {
+  position: relative;
+  margin: 0 30px;
+  margin-bottom: 70px;
+  font-size: 41px;
+  line-height: 0.9;
+  color: #cc9900;
+  text-align:center;
+}
+.reservations__title::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 24px;
+  background: url("../img/Divider2.png");
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -45px;
+}
+
+.reservations__text {
+  margin-bottom: 30px;
+  font-family: "Lato";
+  font-size: 17px;
+  text-align:inherit;
+}
+.reservations__text p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.reservations__btn {
+  padding: 8px 60px 10px;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  background-color: #cc9900;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.form {
+  font-family: "OpenSans", sans-serif;
+  
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+
+.form__column {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.form__label {
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-family: "OpenSans";
+  font-weight: bold;
+  color: #cc9900;
+  text-align: start;
+}
+
+.form__field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c8c6c6;
+  line-height: normal;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.form__field option {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.2;
+}
+.form__field:focus {
+  outline: none;
+  border: 1px solid #cc9900;
+}
+
+.page-footer {
+  background-color: #191919;
+  background-image: url(../img/bg5.png);
+  display: flex;
+  background-repeat: no-repeat;
+  height: 320px;
+  background-position: center;
+  width: 1600px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fefefe;
+}
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  margin-left: 175px;
+  margin-right: 175px;
+  max-width: 1250px;
+  display: flex;
+  padding: 52px 110px 70px 40px;
+}
+
+.page-footer__colunm1 {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  text-align: center;
+  margin: 0 12px 0 11px;
+}
+.page-footer__colunm2 {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  text-align: center;
+  margin: 0 0 0 100px;
+}
+.page-footer__colunm3 {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  text-align: center;
+  margin: 0 0 0 170px;
+}
+
+.page-footer__divider {
+  width: 170px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+
+.page-footer__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.page-footer__info {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.page-footer__payment {
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+.page-footer__payment i {
+  margin: 0 5px;
+}
+
+.page-footer__socials {
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+.socials__item--white {
+  color: white;
+  margin: 0 4px;
+}
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "YesevaOne", serif;
+}
