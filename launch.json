@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open 1 лаба",
+            "file": "C:\\Дана\\РПИ\\1 лаба"
+        }
+    ]
+}
