@@ -366,6 +366,7 @@ hr {
 
 .menu {
   background-image: url(../img/menu-bg.jpg);
+  flex-direction: row;
   display: flex;
   background-repeat: no-repeat;
   height: 994px;
@@ -378,24 +379,23 @@ hr {
 
 .menu__wrapper {
   box-sizing: border-box;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  width: 1170px;
-  max-height: 794px;
-  align-self: center;
-  align-items: center;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .menu__column1 {
   box-sizing: border-box;
-  margin-left: 70px;
+  margin-right: 85px;
 }
 .menu__column2 {
   box-sizing: border-box;
-  margin-left: 170px;
+  margin-left: 85px;
 }
 
 .menu__category {
@@ -405,7 +405,6 @@ hr {
 .menu__title {
   box-sizing: border-box;
   position: relative;
-  /* margin-bottom: 55px; */
   font-size: 36px;
   font-weight: bold;
   font-family: "YesevaOne";
