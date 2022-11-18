@@ -696,45 +696,54 @@ hr {
 
 .page-footer__wrapper {
   box-sizing: border-box;
-  margin-left: 175px;
-  margin-right: 175px;
-  max-width: 1250px;
   display: flex;
-  padding: 52px 110px 70px 40px;
+  margin: auto;
+  width: 1170px;
+  height: 205px;
+  align-self: center;
+  justify-self: center;
 }
 
 .page-footer__colunm1 {
-  display: flex;
+  box-sizing: border-box;
+
   flex-direction: column;
-  width: 345px;
+  display: flex;
+  justify-content: stretch;
+  width: 370px;
   text-align: center;
   margin: 0 12px 0 11px;
 }
 .page-footer__colunm2 {
-  display: flex;
+  box-sizing: border-box;
+
   flex-direction: column;
+  display: flex;
+  justify-self: center;
   width: 230px;
   text-align: center;
   margin: 0 0 0 100px;
 }
 .page-footer__colunm3 {
-  display: flex;
+  box-sizing: border-box;
+
   flex-direction: column;
+  display: flex;
   width: 230px;
   text-align: center;
-  margin: 0 0 0 170px;
+  margin: 0 0 0 160px;
 }
 
 .page-footer__divider {
   width: 170px;
   align-self: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .page-footer__title {
   position: relative;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 1.2;
 }
@@ -748,12 +757,11 @@ hr {
 }
 .page-footer__infocontinue {
   margin: 0;
-  margin-bottom: 50px;
 }
 
 .page-footer__payment {
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 .page-footer__payment i {
   margin: 0 5px;
@@ -761,7 +769,7 @@ hr {
 
 .page-footer__socials {
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 .socials__item--white {
   color: white;
